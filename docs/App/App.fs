@@ -166,7 +166,7 @@ module MarkdownLoader =
     let loadMarkdown (path: string): ReactElement =
         React.elmishComponent ("LoadMarkdown", init path, update, render, key = path)
 
-let home: ReactElement = MarkdownLoader.loadMarkdown "path"
+let home: ReactElement = MarkdownLoader.loadMarkdown "https://raw.githubusercontent.com/ttak0422/feliz-examples/master/README.md"
 
 let notFound =
     Html.div
