@@ -1,0 +1,12 @@
+image: fsharp:4.1
+
+ports: 
+  - port: 8888
+
+tasks:
+  - init: yarn install
+    command: ./fake.sh build -t WatchDocs
+
+vscode:
+  extensions:
+    - Ionide.Ionide-fsharp@4.6.3:XdK25wIn7uNqBF8OMFreqQ==
