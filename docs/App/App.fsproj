@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/HelloWorld/HelloWorld.fsproj">
+      <Name>HelloWorld.fsproj</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../src/SimpleCounter/SimpleCounter.fsproj">
+      <Name>SimpleCounter.fsproj</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../src/Counter/Counter.fsproj">
+      <Name>Counter.fsproj</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../src/InputBox/InputBox.fsproj">
+      <Name>InputBox.fsproj</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../src/Todos/Todos.fsproj">
+      <Name>Todos.fsproj</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../src/EditableTodos/EditableTodos.fsproj">
+      <Name>EditableTodos.fsproj</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../src/LocalStorageEditableTodos/LocalStorageEditableTodos.fsproj">
+      <Name>LocalStorageEditableTodos.fsproj</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../src/FilterTodos/FilterTodos.fsproj">
+      <Name>FilterTodos.fsproj</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../src/ManagedTodos/ManagedTodos.fsproj">
+      <Name>ManagedTodos.fsproj</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.fs" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>
