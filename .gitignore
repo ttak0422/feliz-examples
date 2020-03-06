@@ -1,5 +1,6 @@
 public/*
 !public/*.html
+!public/*.css
 
 # F#
 .fake/
